@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f0e0;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 50px 0px 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  position: relative;
+}
+
+nav a:hover:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: black;
+  animation: underline 3s ease-in-out infinite alternate;
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.lp-portofolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  font-size: 5em;
+  margin: 0 20px 50px;
+}
+
+hr {
+  border: 2px solid black;
+  margin: 0px 50px;
+}
+
+.profesi-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 60px;
+  padding: 0;
+}
+
+.profesi-list li {
+  display: inline;
+
+}
+
